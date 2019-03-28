@@ -1,0 +1,28 @@
+\documentclass[a4paper]{article}
+\usepackage[a4paper,landscape]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{textpos}
+\usepackage{xcolor}
+
+%25,25,112
+\definecolor{mycolor}{rgb}{0.09,0.09,0.4}
+
+\begin{document}
+\thispagestyle{empty}
+\begin{tikzpicture}[remember picture, overlay]
+ \node[inner sep=0pt] at (current page.center) {%
+  \includegraphics[width=\paperwidth,height=\paperheight]{certificate_professors.png}%
+};
+\end{tikzpicture}
+
+\begin{textblock}{100}(0,3.3)
+{\fontsize{1.5cm}{1em}\selectfont\textsf{\color{mycolor}PUTHERE}}
+\end{textblock}
+%\begin{textblock}{100}(-2,5.5)
+%{\fontsize{1cm}{1em}\selectfont\textsf{\color{mycolor}ANDHERE}}
+%\end{textblock}
+\end{document}
